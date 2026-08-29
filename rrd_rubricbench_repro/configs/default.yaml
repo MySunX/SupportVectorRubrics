@@ -1,0 +1,29 @@
+benchmark_path: ./data/rubricbench.json
+output_dir: ./outputs
+
+llm:
+  model: gpt-oss-120b
+  base_url: null
+  api_key: null
+  reasoning_effort: high
+  temperature: 0.0
+  top_p: 1.0
+  max_tokens: 2048
+  timeout: 900
+  max_retries: 8
+  cache_dir: ./.cache
+
+rrd:
+  sample_models:
+    - gpt-4o
+    - gemini-2.5-pro
+  sample_count_per_model: 4
+  sample_temperature: 0.7
+  sample_top_p: 0.95
+  strong_reference_model: gpt-4o
+  weak_reference_model: qwen3-8b
+  decomposition_trigger_yes_count: 2
+  max_decomposition_depth: 3
+  termination_threshold: 15
+  weight_mode: wu
+  evaluation_mode: aggregated

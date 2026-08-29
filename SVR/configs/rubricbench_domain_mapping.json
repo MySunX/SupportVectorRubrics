@@ -1,0 +1,69 @@
+{
+  "total_examples": 1147,
+  "coarse_domains": {
+    "CHAT": {
+      "count": 422,
+      "share": 0.3679,
+      "fine_domains": {
+        "human-preference": 235,
+        "general": 108,
+        "Factuality": 44,
+        "Focus": 22,
+        "helpful": 13
+      }
+    },
+    "CODE": {
+      "count": 271,
+      "share": 0.2363,
+      "fine_domains": {
+        "code": 258,
+        "mbpp": 13
+      }
+    },
+    "STEM": {
+      "count": 250,
+      "share": 0.218,
+      "fine_domains": {
+        "stem": 167,
+        "math": 71,
+        "Math": 5,
+        "mmlu-pro": 5,
+        "gpqa": 2
+      }
+    },
+    "IF": {
+      "count": 124,
+      "share": 0.1081,
+      "fine_domains": {
+        "ifeval": 101,
+        "Precise IF": 23
+      }
+    },
+    "SAFETY": {
+      "count": 80,
+      "share": 0.0697,
+      "fine_domains": {
+        "harmlessness": 45,
+        "Safety": 35
+      }
+    }
+  },
+  "raw_to_coarse": {
+    "human-preference": "CHAT",
+    "general": "CHAT",
+    "Factuality": "CHAT",
+    "Focus": "CHAT",
+    "helpful": "CHAT",
+    "code": "CODE",
+    "mbpp": "CODE",
+    "stem": "STEM",
+    "math": "STEM",
+    "Math": "STEM",
+    "mmlu-pro": "STEM",
+    "gpqa": "STEM",
+    "ifeval": "IF",
+    "Precise IF": "IF",
+    "harmlessness": "SAFETY",
+    "Safety": "SAFETY"
+  }
+}
